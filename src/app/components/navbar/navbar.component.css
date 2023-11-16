@@ -1,0 +1,85 @@
+
+nav {
+    background-color: #FFF8;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #FFF5;
+    box-shadow: 0 10px 25px #0004;
+    backdrop-filter: blur(25px);
+    position: sticky;
+    top: 0;
+    padding: 0 5% !important;
+    z-index: 100;
+}
+
+nav img {
+    height: 40px;
+    width: auto;
+}
+
+nav div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.super-container {
+    padding: 5% !important;
+}
+
+.barrier {
+    width: 1px;
+    background-color: #2224;
+    height: 30px;
+}
+
+nav h1 {
+    font-weight: 300;
+    transition: ease-in-out color 300ms;
+
+}
+
+nav h1:hover { 
+    color: var(--primary);
+    cursor: pointer;
+    transition: ease-in-out color 150ms;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all ease-in-out 450ms;
+    top: 2px;
+}
+
+nav ul li:hover {
+    transition: all ease-in-out 100ms;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+nav ul li::after {
+    position: relative;
+    width: 0%;
+    background-color: var(--primary);
+    height: 2px;
+    transition: all ease-in-out 450ms;
+    content: '';
+    animation: fan linear 300ms infinite;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+    transition: all ease-in-out 250ms;
+}

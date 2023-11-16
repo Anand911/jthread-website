@@ -1,0 +1,12 @@
+<nav>
+    <div>
+        <img src="https://www.svgrepo.com/show/520624/chart-mixed.svg" alt="">
+        <div class="barrier"></div>
+        <p>Training</p>
+    </div>
+    <h1 (click)="redirectHome()">{{companyName}}</h1>
+    <ul>
+        <li [routerLink]="['home']">Home</li>
+        <li [routerLink]="['contact']">Contact Us</li>
+    </ul>
+</nav>
