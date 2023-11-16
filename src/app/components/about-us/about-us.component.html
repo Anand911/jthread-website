@@ -1,0 +1,6 @@
+<div class="content">
+    <app-message message="We are green" color="green"></app-message>
+    <app-message message="We are orange" color="orange"></app-message>
+    <app-child-button (CustomEvent)="display($event)"></app-child-button>
+    <p>{{msg}}</p>
+</div>
