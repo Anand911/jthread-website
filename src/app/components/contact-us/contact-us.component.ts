@@ -10,6 +10,6 @@ export class ContactUsComponent {
   contact:Contact=new Contact();
   onSubmit()
   {
-    alert(this.contact.name+" Submitted");
+    alert(" Submitted");
   }
 }
