@@ -1,3 +1,8 @@
+.container {
+    display:flex;
+    flex-direction: row;
+}
+
 svg {
 	height: 23rem;
 	margin-right: 4rem;
@@ -118,4 +123,9 @@ form {
   box-shadow: 0 0.5em 0.5em -0.4em #ff923cba;
   background-size: 100% 100%;
   transform: translateY(-0.15em);
+}
+
+.text-center button {
+    width: 200px;
+    margin-top: 20px;
 }
